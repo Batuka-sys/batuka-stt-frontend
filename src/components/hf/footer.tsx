@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 space-y-2 sm:space-y-0">
           {/* Left side - App info */}
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <div className="hidden sm:block w-px h-3 bg-gray-600"></div>
 
             <div className="flex items-center space-x-1.5 px-2 py-1 bg-blue-500/10 border border-blue-500/20 rounded-md">
@@ -27,10 +27,10 @@ const Footer: React.FC<FooterProps> = ({
                 🎵 Audio Playback Enabled
               </span>
             </div>
-          </div>
+          </div> */}
 
           {/* Right side - Backend status */}
-          <div className="flex items-center space-x-3">
+          {/* <div className="flex items-center space-x-3">
             <span className="text-gray-500">
               Backend:
               <span
@@ -41,7 +41,7 @@ const Footer: React.FC<FooterProps> = ({
                 {backendConnected ? "Connected" : "Development Mode"}
               </span>
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
