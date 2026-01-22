@@ -17,14 +17,12 @@ export default function RootLayout({
   const backendConnected = true;
 
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="no-scrollbar">
+      <body className="no-scrollbar">
         <Header backendConnected={backendConnected} />
         <StarsBackground numParticles={150}>
-          <main className="flex-1 h-full w-full sm:px-6 lg:px-8 py-8">
-            {children}
-          </main>
-          <Footer backendConnected={backendConnected} />
+          <main className="flex-1 h-full w-full">{children}</main>
+          <Footer backendConnected={backendConnected} className="z-10" />
         </StarsBackground>
       </body>
     </html>
