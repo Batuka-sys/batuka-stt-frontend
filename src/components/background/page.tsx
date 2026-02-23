@@ -103,13 +103,13 @@ const StarsBackground: React.FC<StarsBackgroundProps> = ({
   return (
     <div className={`relative min-h-screen ${className}`}>
       {/* Dark gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-black" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-black z-0" />
 
       {/* Subtle mesh overlay for depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.12),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(147,51,234,0.12),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.12),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(147,51,234,0.12),transparent_50%)] z-0" />
 
       {/* Animated particles */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col min-h-screen">{children}</div>

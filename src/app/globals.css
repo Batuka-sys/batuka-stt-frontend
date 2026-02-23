@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-mic-pulse: pulse-scale 2s ease-in-out infinite;
+  --animate-slide-up: slide-up 0.35s ease-out;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,4 +65,15 @@ body::-webkit-scrollbar {
 
 .animate-pulse-scale {
   animation: pulse-scale 2s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

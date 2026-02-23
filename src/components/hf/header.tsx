@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ backendConnected }) => {
             <div className="w-3 h-3 bg-white rounded-sm opacity-90" />
           </div>
           <h1 className="text-xl font-semibold text-white tracking-tight">
-            Speech-to-Text
+            Personal AI Assistant
           </h1>
         </div>
 
